@@ -60,7 +60,7 @@ const Signup = () => {
             Sign Up
           </button>
           <p className="mt-4 text-center text-gray-600">
-            Already have an account? <a href="#" className="text-indigo-600 hover:underline">Log in</a>
+            Already have an account? <a href="https://www.softechww.com/" className="text-indigo-600 hover:underline">Log in</a>
           </p>
         </form>
       </div>
