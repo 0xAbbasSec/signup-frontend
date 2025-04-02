@@ -13,9 +13,9 @@ const Footer = () => {
         <div className="w-full md:w-1/4">
           <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
           <ul className="text-gray-400 space-y-1 text-sm">
-            <li><a href="#" className="hover:text-white transition">Services</a></li>
-            <li><a href="#" className="hover:text-white transition">Privacy Policy</a></li>
-            <li><a href="#" className="hover:text-white transition">Contact</a></li>
+            <li><a href="https://www.softechww.com/computer-vision-development-services" className="hover:text-white transition">Services</a></li>
+            <li><a href="https://www.softechww.com/privacy-policy" className="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="https://www.softechww.com/contact" className="hover:text-white transition">Contact</a></li>
           </ul>
         </div>
         <div className="w-full md:w-1/4">
