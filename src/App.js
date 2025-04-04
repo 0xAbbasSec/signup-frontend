@@ -14,7 +14,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://signup-backend-a3j442t8r-abd-10-54a9568b.vercel.app/signup", formData);
+      await axios.post("https://signup-backend-nine.vercel.app/signup", formData);
       window.location.href = "https://softechww.com";
     } catch (error) {
       console.error("Error submitting form", error);
