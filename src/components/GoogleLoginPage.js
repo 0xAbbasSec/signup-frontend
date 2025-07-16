@@ -104,13 +104,13 @@ const GoogleLoginPage = () => {
           </svg>
         </div>
         <div className="flex gap-6">
-          <a href="#" className="hover:underline">
+          <a href="https://support.google.com/accounts?hl=en&visit_id=638882847316884916-1390047257&rd=2&p=account_iph#topic=3382296" className="hover:underline">
             Help
           </a>
-          <a href="#" className="hover:underline">
+          <a href="https://policies.google.com/privacy?gl=PK&hl=en-US" className="hover:underline">
             Privacy
           </a>
-          <a href="#" className="hover:underline">
+          <a href="https://policies.google.com/terms?gl=PK&hl=en-US" className="hover:underline">
             Terms
           </a>
         </div>
